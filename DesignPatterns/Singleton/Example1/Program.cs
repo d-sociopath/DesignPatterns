@@ -12,12 +12,14 @@
 
         private static void PrintTeacherDetails()
         {
-            Singleton fromTeacher = Singleton.GetInstance();
+            Singleton fromTeacher = Singleton.GetInstance(); //without lazy initialization
+            //Singleton fromTeacher = Singleton.Instance; //with lazy initialization
             fromTeacher.PrintDetails("From Teacher");
         }
         private static void PrintStudentDetails()
         {
-            Singleton fromStudent = Singleton.GetInstance();
+            Singleton fromStudent = Singleton.GetInstance();//without lazy initialization
+            //Singleton fromStudent = Singleton.Instance;//with lazy initialization
             fromStudent.PrintDetails("From Student");
         }
     }
